@@ -1,0 +1,43 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+# =============== #
+# Unity generated #
+# =============== #
+Assets/AssetStoreTools*
+Assets/Plugins/
+Library/
+Logs/
+obj/
+ProjectSettings/
+Temp/
+UnityGenerated/
+*.meta
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+/.vs/WhatsASeawizard/v16
+*.booproj
+*.pidb
+*.csproj
+*.sln
+*.suo
+*.svd
+*.unityproj
+*.user
+*.userprefs
+
+# ============ #
+# OS generated #
+# ============ #
+._*
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Icon?

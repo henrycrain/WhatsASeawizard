@@ -5,19 +5,22 @@
 # =============== #
 # Unity generated #
 # =============== #
-Assets/AssetStoreTools*
-Assets/Plugins/
-Library/
-Logs/
-obj/
-Temp/
+[Aa]ssets/AssetStoreTools*
+[Aa]ssets/Plugins/
+[Ll]ibrary/
+[Ll]ogs/
+[Oo]bj/
+[Tt]emp/
 UnityGenerated/
+
+# Never ignore asset metadata
+!/[Aa]ssets/**/*.meta
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
 ExportedObj/
-/.vs/WhatsASeawizard/v16
+.vs/
 *.booproj
 *.pidb
 *.csproj

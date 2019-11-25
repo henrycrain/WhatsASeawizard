@@ -30,6 +30,11 @@ ExportedObj/
 *.user
 *.userprefs
 
+# ================= #
+# Blender generated #
+# ================= #
+*.blend1
+
 # ============ #
 # OS generated #
 # ============ #

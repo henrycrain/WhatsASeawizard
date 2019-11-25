@@ -10,10 +10,8 @@ Assets/Plugins/
 Library/
 Logs/
 obj/
-ProjectSettings/
 Temp/
 UnityGenerated/
-*.meta
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #

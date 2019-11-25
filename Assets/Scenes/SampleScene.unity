@@ -5147,7 +5147,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d40b8be095effb42a9923df1971dc427, type: 2}
+  - {fileID: 2100000, guid: e2d85ea5d7b021044929299ff19299a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5295,8 +5295,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1593895675}
-  - {fileID: 873476116}
+  - {fileID: 3585432669844098164}
+  - {fileID: 1036855175}
   - {fileID: 1910585256}
   m_Father: {fileID: 453890383}
   m_RootOrder: 0
@@ -5410,12 +5410,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741423153}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!224 &873476116 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3585432668887819912, guid: 2c0e756b056cfd34f954c296444c51e9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1036855174}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &911546508
 GameObject:
   m_ObjectHideFlags: 0
@@ -5693,11 +5687,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 729516806}
     m_Modifications:
-    - target: {fileID: 3585432668887819913, guid: 2c0e756b056cfd34f954c296444c51e9,
-        type: 3}
-      propertyPath: m_Name
-      value: LightningButton
-      objectReference: {fileID: 0}
     - target: {fileID: 3585432668887819912, guid: 2c0e756b056cfd34f954c296444c51e9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5803,6 +5792,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3585432668887819913, guid: 2c0e756b056cfd34f954c296444c51e9,
+        type: 3}
+      propertyPath: m_Name
+      value: LightningButton
+      objectReference: {fileID: 0}
     - target: {fileID: 3585432668887819919, guid: 2c0e756b056cfd34f954c296444c51e9,
         type: 3}
       propertyPath: player
@@ -5826,6 +5820,11 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0e756b056cfd34f954c296444c51e9, type: 3}
+--- !u!4 &1036855175 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1036855174}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1321998256
 GameObject:
   m_ObjectHideFlags: 0
@@ -5981,7 +5980,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2cd7cc33de56259259f22a604365f8b1, type: 2}
+  - {fileID: 2100000, guid: cb85cee85b0ff5d449f3692c35b10ef9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6018,18 +6017,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541034339}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.01, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!224 &1593895675 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3585432668887819912, guid: 2c0e756b056cfd34f954c296444c51e9,
-    type: 3}
-  m_PrefabInstance: {fileID: 3585432669844098163}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1702949538
 GameObject:
   m_ObjectHideFlags: 0
@@ -6371,7 +6364,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d40b8be095effb42a9923df1971dc427, type: 2}
+  - {fileID: 2100000, guid: e2d85ea5d7b021044929299ff19299a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6407,11 +6400,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 729516806}
     m_Modifications:
-    - target: {fileID: 3585432668887819913, guid: 2c0e756b056cfd34f954c296444c51e9,
-        type: 3}
-      propertyPath: m_Name
-      value: SwordButton
-      objectReference: {fileID: 0}
     - target: {fileID: 3585432668887819912, guid: 2c0e756b056cfd34f954c296444c51e9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6517,6 +6505,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3585432668887819913, guid: 2c0e756b056cfd34f954c296444c51e9,
+        type: 3}
+      propertyPath: m_Name
+      value: SwordButton
+      objectReference: {fileID: 0}
     - target: {fileID: 3585432668887819919, guid: 2c0e756b056cfd34f954c296444c51e9,
         type: 3}
       propertyPath: parentMenu
@@ -6540,10 +6533,9 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0e756b056cfd34f954c296444c51e9, type: 3}
---- !u!224 &1910585256 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3585432668887819912, guid: 2c0e756b056cfd34f954c296444c51e9,
-    type: 3}
+--- !u!4 &1910585256 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 1910585255}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1978376673
@@ -11812,11 +11804,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 729516806}
     m_Modifications:
-    - target: {fileID: 3585432668887819913, guid: 2c0e756b056cfd34f954c296444c51e9,
-        type: 3}
-      propertyPath: m_Name
-      value: FireButton
-      objectReference: {fileID: 0}
     - target: {fileID: 3585432668887819912, guid: 2c0e756b056cfd34f954c296444c51e9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11922,6 +11909,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3585432668887819913, guid: 2c0e756b056cfd34f954c296444c51e9,
+        type: 3}
+      propertyPath: m_Name
+      value: FireButton
+      objectReference: {fileID: 0}
     - target: {fileID: 3585432668887819919, guid: 2c0e756b056cfd34f954c296444c51e9,
         type: 3}
       propertyPath: player
@@ -11945,3 +11937,8 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0e756b056cfd34f954c296444c51e9, type: 3}
+--- !u!4 &3585432669844098164 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 3585432669844098163}
+  m_PrefabAsset: {fileID: 0}

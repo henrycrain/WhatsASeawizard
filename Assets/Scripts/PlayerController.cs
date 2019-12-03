@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
 
         var velocity = direction * speed;
 
-        velocity.y = currentVerticalSpeed;
+        velocity.z = currentVerticalSpeed;
 
         
         if (controller.isGrounded && Input.GetButtonDown("Jump"))
@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
 
         velocity += Physics.gravity * gravityScale * Time.deltaTime;
 
-        currentVerticalSpeed = velocity.y;
+        currentVerticalSpeed = velocity.z;
 
         velocity = transform.TransformDirection(velocity);
 

@@ -74,7 +74,7 @@ public class CameraController : MonoBehaviour {
         float targetYAngle = target.eulerAngles.y;
         float targetXAngle = pivot.eulerAngles.x;
 
-        Quaternion rotation = Quaternion.Euler(targetXAngle, targetYAngle, 0.0f);
+        var rotation = Quaternion.Euler(targetXAngle, targetYAngle, 0.0f);
         transform.position = target.position - (rotation * offset);
 
         if (transform.position.y < target.position.y)

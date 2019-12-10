@@ -54,23 +54,19 @@ public class PlayerController : MonoBehaviour
         uiManager.UpdateMana(mana.GetCurrentMana() / mana.GetMaxMana());
     }
 
-    void HandleMove()
+    private void HandleMove()
     {
         var direction = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
-
         var velocity = direction * speed;
-
-        velocity.z = currentVerticalSpeed;
+        velocity.y = currentVerticalSpeed;
 
         
-        if (controller.isGrounded && Input.GetButtonDown("Jump"))
-        {
+        if (controller.isGrounded && Input.GetButtonDown("Jump")) {
             velocity.y = jumpForce;
         }
 
-        velocity += Physics.gravity * gravityScale * Time.deltaTime;
-
-        currentVerticalSpeed = velocity.z;
+        velocity += Time.deltaTime * gravityScale * Physics.gravity;
+        currentVerticalSpeed = velocity.y;
 
         velocity = transform.TransformDirection(velocity);
 

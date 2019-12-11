@@ -61,7 +61,8 @@ public class PlayerController : MonoBehaviour
         velocity.y = currentVerticalSpeed;
 
         
-        if (controller.isGrounded && Input.GetButtonDown("Jump")) {
+        if (controller.isGrounded && Input.GetButtonDown("Jump")) 
+        {
             velocity.y = jumpForce;
         }
 
@@ -130,6 +131,11 @@ public class PlayerController : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public void Die()
+    {
+        Destroy(gameObject);
     }
 
     IEnumerator SwordCooldown()

@@ -1,8 +1,38 @@
 fileFormatVersion: 2
-guid: b8cdfa7056befd441a2f5712bae1830c
+guid: 652d56f442a92734b80a0fd87d4c139f
 ModelImporter:
   serializedVersion: 26
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 7166795868199246467
+    second: Sphere|Death
+  - first:
+      74: -3777153505740021476
+    second: Sphere|Death.001
+  - first:
+      74: -5425132962656766203
+    second: Sphere|Stand
+  - first:
+      74: 3140933764831603978
+    second: Sphere|Attack
+  - first:
+      74: -4901126675295228450
+    second: Sphere|Walk
+  - first:
+      74: -5122989720332935947
+    second: Tendril|Death
+  - first:
+      74: 6067220841381891106
+    second: Tendril|Death.001
+  - first:
+      74: -1053563160156831200
+    second: Tendril|Stand
+  - first:
+      74: 8402876907006303417
+    second: Tendril|Attack
+  - first:
+      74: 1417447701474803707
+    second: Tendril|Walk
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -87,7 +117,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

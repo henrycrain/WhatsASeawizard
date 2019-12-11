@@ -18,9 +18,10 @@ public class Damageable : MonoBehaviour
     {
         currentHealth = Mathf.Max(0, currentHealth - value);
         
-        if (currentHealth == 0)
+        // Not using == because float
+        if (currentHealth < 0.001)
         {
-            Destroy(gameObject);
+            gameObject.SendMessage("Die");
         }
     }
 

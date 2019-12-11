@@ -1,14 +1,16 @@
-﻿using System;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Patrol : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
     public GameObject player;
     public float pursuitDistance;
     public float attackRange;
     public float attackDamage;
-    
+    public Transform[] patrol;
+
     // Capitalized to match names in Unity
     // This method is more efficient than using strings to look up names
     private static readonly int Walk = Animator.StringToHash("Walk");
@@ -20,11 +22,15 @@ public class Patrol : MonoBehaviour
     private NavMeshAgent agent;
     private Damageable damageable;
 
+    private int nextIndex;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         damageable = player.GetComponent<Damageable>();
+        
+        NextPoint();
     }
 
     private void Update()
@@ -48,13 +54,27 @@ public class Patrol : MonoBehaviour
                 agent.SetDestination(transform.position);
             }
         }
-        else
+        
+        bool patrolling = !attack && !pursue && patrol.Length > 0;
+        if (patrolling && !agent.pathPending && agent.remainingDistance < 0.5f)
         {
-            agent.SetDestination(transform.position);
+            NextPoint();
         }
 
         animator.SetBool(Attack, attack);
         animator.SetBool(Run, pursue);
+        animator.SetBool(Walk, patrolling);
+    }
+
+    private void NextPoint()
+    {
+        if (patrol.Length <= 0)
+            return;
+
+        agent.destination = patrol[nextIndex].position;
+
+        nextIndex++;
+        nextIndex %= patrol.Length;
     }
 
     public void AttackEvent()

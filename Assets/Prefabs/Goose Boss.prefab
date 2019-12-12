@@ -41,9 +41,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3503225209313408495}
   - component: {fileID: 6780159369024968853}
-  - component: {fileID: -8421023703034106125}
   - component: {fileID: -4029482141827320993}
   - component: {fileID: 5525912045629536861}
+  - component: {fileID: 8735559948421668765}
   m_Layer: 0
   m_Name: Goose Boss
   m_TagString: Untagged
@@ -60,7 +60,7 @@ Transform:
   m_GameObject: {fileID: 488267948453480444}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 879326050015886945}
   - {fileID: 1582548773690090528}
@@ -86,19 +86,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!135 &-8421023703034106125
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 488267948453480444}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &-4029482141827320993
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -132,6 +119,20 @@ MonoBehaviour:
   attackRange: 1
   attackDamage: 10
   patrol: []
+--- !u!136 &8735559948421668765
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488267948453480444}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5523341
+  m_Height: 2.3139076
+  m_Direction: 2
+  m_Center: {x: 0, y: 0.67766595, z: -0.018964767}
 --- !u!1 &805202551417474830
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4322025942451828531}
+  - component: {fileID: 3974776148011775287}
   m_Layer: 0
   m_Name: Stone Spawn
   m_TagString: Untagged
@@ -24,12 +25,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259680680637514583}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: -8.5}
+  m_LocalPosition: {x: -12.5, y: 0, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1514358110136781803}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3974776148011775287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259680680637514583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19b93b37b0f4459a6c99445cf3d1858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stoneParent: {fileID: 0}
+  stonePrefab: {fileID: 0}
+  minInterval: 0
+  maxInterval: 0
+  stoneSpeed: 0
 --- !u!1 &778315551600717771
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,6 +186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3287724955604451204}
+  - component: {fileID: 416037298241496334}
   m_Layer: 0
   m_Name: Stone Spawn (6)
   m_TagString: Untagged
@@ -183,12 +202,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195725841795639007}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: 3.5}
+  m_LocalPosition: {x: -12.5, y: 0, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1514358110136781803}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &416037298241496334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195725841795639007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19b93b37b0f4459a6c99445cf3d1858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stoneParent: {fileID: 0}
+  stonePrefab: {fileID: 0}
+  minInterval: 0
+  maxInterval: 0
+  stoneSpeed: 0
 --- !u!1 &1649145156057162568
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,6 +234,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6655567891646780541}
+  - component: {fileID: 5922425880922054803}
   m_Layer: 0
   m_Name: Stone Spawn (2)
   m_TagString: Untagged
@@ -213,12 +250,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649145156057162568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: -4.5}
+  m_LocalPosition: {x: -12.5, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1514358110136781803}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5922425880922054803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649145156057162568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19b93b37b0f4459a6c99445cf3d1858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stoneParent: {fileID: 0}
+  stonePrefab: {fileID: 0}
+  minInterval: 0
+  maxInterval: 0
+  stoneSpeed: 0
 --- !u!1 &2554455904315620267
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,6 +282,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4822980808189273558}
+  - component: {fileID: 6788014111301915652}
+  - component: {fileID: 4796286906762806726}
   m_Layer: 0
   m_Name: Stone Despawn (6)
   m_TagString: Untagged
@@ -243,12 +299,37 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2554455904315620267}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: 9}
+  m_LocalPosition: {x: 12.5, y: 0, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1583687712239647876}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6788014111301915652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2554455904315620267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd7a7d79d4f84f82b97cc357268f150a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &4796286906762806726
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2554455904315620267}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2682441020352117384
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,6 +431,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6468356452854545082}
+  - component: {fileID: 2506858129957654560}
+  - component: {fileID: 6230900149567565575}
   m_Layer: 0
   m_Name: Stone Despawn (4)
   m_TagString: Untagged
@@ -365,12 +448,37 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2741556002007823050}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: 3}
+  m_LocalPosition: {x: 12.5, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1583687712239647876}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2506858129957654560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2741556002007823050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd7a7d79d4f84f82b97cc357268f150a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &6230900149567565575
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2741556002007823050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3018483311161377887
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,6 +617,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7131576179678593487}
+  - component: {fileID: 7594331952308809281}
+  - component: {fileID: 1860754914027800775}
   m_Layer: 0
   m_Name: Stone Despawn (5)
   m_TagString: Untagged
@@ -524,12 +634,37 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3803073301295353140}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: 6}
+  m_LocalPosition: {x: 12.5, y: 0, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1583687712239647876}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7594331952308809281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3803073301295353140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd7a7d79d4f84f82b97cc357268f150a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1860754914027800775
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3803073301295353140}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5049543208924991104
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +766,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5950359930006345679}
+  - component: {fileID: 7319754516671279573}
   m_Layer: 0
   m_Name: Stone Spawn (5)
   m_TagString: Untagged
@@ -646,12 +782,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5388962614127508086}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: 1.5}
+  m_LocalPosition: {x: -12.5, y: 0, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1514358110136781803}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7319754516671279573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5388962614127508086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19b93b37b0f4459a6c99445cf3d1858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stoneParent: {fileID: 0}
+  stonePrefab: {fileID: 0}
+  minInterval: 0
+  maxInterval: 0
+  stoneSpeed: 0
 --- !u!1 &5481318527736218823
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,6 +906,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1371989541838068210}
+  - component: {fileID: 6405125881079837196}
   m_Layer: 0
   m_Name: Stone Spawn (3)
   m_TagString: Untagged
@@ -768,12 +922,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5721516121816091446}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: -2.5}
+  m_LocalPosition: {x: -12.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1514358110136781803}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6405125881079837196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5721516121816091446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19b93b37b0f4459a6c99445cf3d1858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stoneParent: {fileID: 0}
+  stonePrefab: {fileID: 0}
+  minInterval: 0
+  maxInterval: 0
+  stoneSpeed: 0
 --- !u!1 &5829162834518097838
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,6 +954,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1679288651532182562}
+  - component: {fileID: 1496373694865686119}
+  - component: {fileID: 4814720998761966200}
   m_Layer: 0
   m_Name: Stone Despawn (1)
   m_TagString: Untagged
@@ -798,12 +971,37 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5829162834518097838}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: -5}
+  m_LocalPosition: {x: 12.5, y: 0, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1583687712239647876}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1496373694865686119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5829162834518097838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd7a7d79d4f84f82b97cc357268f150a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &4814720998761966200
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5829162834518097838}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6057632973127808313
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,6 +1011,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6978851780635445755}
+  - component: {fileID: 3228435749524515212}
+  - component: {fileID: 9207504137705092014}
   m_Layer: 0
   m_Name: Stone Despawn
   m_TagString: Untagged
@@ -828,12 +1028,37 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6057632973127808313}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: -8}
+  m_LocalPosition: {x: 12.5, y: 0, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1583687712239647876}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3228435749524515212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6057632973127808313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd7a7d79d4f84f82b97cc357268f150a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &9207504137705092014
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6057632973127808313}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6294338079931731437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,6 +1252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4413409660296585530}
+  - component: {fileID: 1662113747448708343}
   m_Layer: 0
   m_Name: Stone Spawn (1)
   m_TagString: Untagged
@@ -1042,12 +1268,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6898813640785084636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: -6.5}
+  m_LocalPosition: {x: -12.5, y: 0, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1514358110136781803}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1662113747448708343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6898813640785084636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19b93b37b0f4459a6c99445cf3d1858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stoneParent: {fileID: 0}
+  stonePrefab: {fileID: 0}
+  minInterval: 0
+  maxInterval: 0
+  stoneSpeed: 0
 --- !u!1 &7143213805859226294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,6 +1300,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9120992667742174580}
+  - component: {fileID: 8729448676499946869}
   m_Layer: 0
   m_Name: Stone Spawn (4)
   m_TagString: Untagged
@@ -1072,12 +1316,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7143213805859226294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: -0.5}
+  m_LocalPosition: {x: -12.5, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1514358110136781803}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8729448676499946869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7143213805859226294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19b93b37b0f4459a6c99445cf3d1858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stoneParent: {fileID: 0}
+  stonePrefab: {fileID: 0}
+  minInterval: 0
+  maxInterval: 0
+  stoneSpeed: 0
 --- !u!1 &7471893726898982358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,6 +1348,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6386268230254256284}
+  - component: {fileID: 4580768527352657881}
+  - component: {fileID: 7302191832619701071}
   m_Layer: 0
   m_Name: Stone Despawn (2)
   m_TagString: Untagged
@@ -1102,12 +1365,37 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7471893726898982358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: -2}
+  m_LocalPosition: {x: 12.5, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1583687712239647876}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4580768527352657881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7471893726898982358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd7a7d79d4f84f82b97cc357268f150a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &7302191832619701071
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7471893726898982358}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7663114650226616424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1224,7 +1512,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7675313711166491343}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.38, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6991339055657238990}
@@ -1359,6 +1647,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5980959339188389416}
+  - component: {fileID: 2341542730505407725}
+  - component: {fileID: 3534956170768400987}
   m_Layer: 0
   m_Name: Stone Despawn (3)
   m_TagString: Untagged
@@ -1374,12 +1664,37 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8397466451909594693}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: 1}
+  m_LocalPosition: {x: 12.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1583687712239647876}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2341542730505407725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8397466451909594693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd7a7d79d4f84f82b97cc357268f150a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &3534956170768400987
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8397466451909594693}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8549734325785986049
 GameObject:
   m_ObjectHideFlags: 0

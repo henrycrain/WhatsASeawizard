@@ -16,6 +16,11 @@ UnityGenerated/
 # Never ignore asset metadata
 !/[Aa]ssets/**/*.meta
 
+# ================ #
+# From Asset Store #
+# ================ #
+[Aa]ssets/Store/
+
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #

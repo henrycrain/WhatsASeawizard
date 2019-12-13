@@ -33,9 +33,6 @@ ModelImporter:
   - first:
       74: 1417447701474803707
     second: Tendril|Walk
-  - first:
-      74: 4530477572179156651
-    second: Sphere|Attack.001
   externalObjects: {}
   materials:
     importMaterials: 1

@@ -15,15 +15,12 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     private Spell currentSpell = Spell.None;
-
-    [SerializeField]
-    private GameObject sword;
-
     private float currentVerticalSpeed = 0f;
     private Damageable health;
     private Mana mana;
     private UIManager uiManager;
     private ParticleSystem lightningSystem;
+    private Animator animator;
 
     private bool canSwingSword = true;
     private bool canFireBall = true;
@@ -35,6 +32,7 @@ public class PlayerController : MonoBehaviour
         controller = GetComponent<CharacterController>();
         mana = GetComponent<Mana>();
         uiManager = GameObject.Find("HUD").GetComponent<UIManager>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -57,6 +55,14 @@ public class PlayerController : MonoBehaviour
     private void HandleMove()
     {
         var direction = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
+        if (direction == Vector3.zero)
+        {
+            animator.SetBool("Walking", true);
+        }
+        else
+        {
+            animator.SetBool("Walking", false);
+        }
         var velocity = direction * speed;
         velocity.y = currentVerticalSpeed;
 
@@ -142,11 +148,8 @@ public class PlayerController : MonoBehaviour
     {
         canSwingSword = false;
         // Should probably use animation events here, sword gets out of sync quickly
-        var swordBehavior = sword.GetComponent<SwordBehavior>();
-        swordBehavior.SetIsSwinging(true);
         yield return new WaitForSeconds(0.5f);
         canSwingSword = true;
-        swordBehavior.SetIsSwinging(false);
     }
 
     IEnumerator FireballCooldown()

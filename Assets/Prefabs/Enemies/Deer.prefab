@@ -238,9 +238,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  pursuitDistance: 5
-  attackRange: 1.5
-  attackDamage: 10
+  pursuitDistance: 0
+  attackRange: 0
+  attackDamage: 0
   patrol: []
 --- !u!65 &-2601693084570811352
 BoxCollider:
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c39b646936b1664d8263030cc7dadf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 30
+  maxHealth: 0
 --- !u!1 &1968777158502057418
 GameObject:
   m_ObjectHideFlags: 0

@@ -128,62 +128,8 @@ Transform:
   m_Father: {fileID: 2409267210452179216}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD:Assets/Prefabs/Enemies/Deer.prefab
---- !u!95 &5680735252139506342
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587339117544482255}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 4f9b79f6c3cdca9438e53442339df05d, type: 3}
-  m_Controller: {fileID: 9100000, guid: 95423d54b57d0dc45960633b3d0b9239, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2236205000679168279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587339117544482255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee70f1712b5c63b4b91b62135b8f454e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  pursuitDistance: 5
-  attackRange: 1.5
-  attackDamage: 10
-  patrol: []
---- !u!65 &-2601693084570811352
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587339117544482255}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.7, z: 1.2}
-  m_Center: {x: 0, y: 0.4, z: 0.1}
---- !u!195 &-4248845945243444515
-NavMeshAgent:
-=======
 --- !u!1 &2314505945699184079
 GameObject:
->>>>>>> parent of 11d540d... Merge branch 'master' of https://github.com/henrycrain/WhatsASeawizard:Assets/Prefabs/Deer.prefab
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -204,16 +150,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/Prefabs/Enemies/Deer.prefab
-  m_GameObject: {fileID: 1587339117544482255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c39b646936b1664d8263030cc7dadf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 30
---- !u!1 &1968777158502057418
-=======
   m_GameObject: {fileID: 2314505945699184079}
   m_LocalRotation: {x: 0.0032140368, y: 0.70709956, z: 0.0032139427, w: 0.7070994}
   m_LocalPosition: {x: 1.8470186e-10, y: 0.0017927825, z: -6.8864234e-11}
@@ -224,7 +160,6 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2351392889726498828
->>>>>>> parent of 11d540d... Merge branch 'master' of https://github.com/henrycrain/WhatsASeawizard:Assets/Prefabs/Deer.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1200,7 +1135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  pursuitDistance: 10
-  attackRange: 1
+  pursuitDistance: 5
+  attackRange: 1.5
   attackDamage: 10
   patrol: []

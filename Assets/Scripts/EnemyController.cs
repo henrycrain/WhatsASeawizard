@@ -11,6 +11,7 @@ public class EnemyController : MonoBehaviour
 
     // Capitalized to match names in Unity
     // This method is more efficient than using strings to look up names
+    private static readonly int Stand = Animator.StringToHash("Stand");
     private static readonly int Walk = Animator.StringToHash("Walk");
     private static readonly int Run = Animator.StringToHash("Run");
     private static readonly int Attack = Animator.StringToHash("Attack");
@@ -45,11 +46,13 @@ public class EnemyController : MonoBehaviour
             if (dist < attackRange)
             {
                 attack = true;
-                agent.SetDestination(player.transform.position);
+                agent.SetDestination(transform.position);
+                animator.SetTrigger(Attack);
             }
             else
             {
-                agent.SetDestination(transform.position);
+                agent.SetDestination(player.transform.position);
+                animator.SetTrigger(Run);
             }
         }
         
@@ -57,11 +60,12 @@ public class EnemyController : MonoBehaviour
         if (patrolling && !agent.pathPending && agent.remainingDistance < 0.5f)
         {
             NextPoint();
+            animator.SetTrigger(Walk);
         }
-
-        animator.SetBool(Attack, attack);
-        animator.SetBool(Run, pursue);
-        animator.SetBool(Walk, patrolling);
+        else
+        {
+            animator.SetTrigger(Stand);
+        }
     }
 
     private void NextPoint()
@@ -83,12 +87,7 @@ public class EnemyController : MonoBehaviour
     public void Die()
     {
         agent.enabled = false;
-        
-        animator.SetBool(Walk, false);
-        animator.SetBool(Run, false);
-        animator.SetBool(Attack, false);
         animator.SetTrigger(Death);
-        
         Destroy(gameObject);  // TODO
     }
 }

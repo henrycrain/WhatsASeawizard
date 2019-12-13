@@ -7,6 +7,8 @@ public class StoneSpawner : MonoBehaviour
 {
     public GameObject stoneParent;
     public GameObject stonePrefab;
+    public Material stoneMaterial;
+    
     public float minInterval;
     public float maxInterval;
     public float stoneSpeed;
@@ -29,6 +31,7 @@ public class StoneSpawner : MonoBehaviour
     {
         GameObject stone = Instantiate(stonePrefab, stoneParent.transform, true);
         stone.transform.position = transform.position;  // set position to spawner
+        stone.GetComponent<MeshRenderer>().material = stoneMaterial;
         stone.GetComponent<StoneBehavior>().speed = stoneSpeed;
     }
 }

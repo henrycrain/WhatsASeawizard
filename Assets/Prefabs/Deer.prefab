@@ -1049,7 +1049,6 @@ GameObject:
   - component: {fileID: 5308778948767880209}
   - component: {fileID: 2821102272953792875}
   - component: {fileID: -2901565781534116003}
-  - component: {fileID: 3571962324140916808}
   - component: {fileID: 6315280557732190992}
   m_Layer: 0
   m_Name: Deer
@@ -1106,22 +1105,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.35514355, y: 0.5888618, z: 1.2605566}
   m_Center: {x: -0.033475526, y: 0.43444097, z: 0.038827352}
---- !u!54 &3571962324140916808
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9221062561132668418}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &6315280557732190992
 MonoBehaviour:
   m_ObjectHideFlags: 0

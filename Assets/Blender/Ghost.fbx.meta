@@ -1,41 +1,23 @@
 fileFormatVersion: 2
-guid: 652d56f442a92734b80a0fd87d4c139f
+guid: bf9fae007d5022f4f94d77a3b13a8d92
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
   - first:
-      74: 7166795868199246467
-    second: Sphere|Death
+      74: -8945691123924629249
+    second: Armature|Idle
   - first:
-      74: -3777153505740021476
-    second: Sphere|Death.001
+      74: -5358362640314827715
+    second: Armature|SeaWizardAction
   - first:
-      74: -5425132962656766203
-    second: Sphere|Stand
+      74: -6755947315489225584
+    second: Armature|SeaWizardAction.001
   - first:
-      74: 3140933764831603978
-    second: Sphere|Attack
+      74: -4116572318725227165
+    second: Armature|Sword Attack
   - first:
-      74: -4901126675295228450
-    second: Sphere|Walk
-  - first:
-      74: -5122989720332935947
-    second: Tendril|Death
-  - first:
-      74: 6067220841381891106
-    second: Tendril|Death.001
-  - first:
-      74: -1053563160156831200
-    second: Tendril|Stand
-  - first:
-      74: 8402876907006303417
-    second: Tendril|Attack
-  - first:
-      74: 1417447701474803707
-    second: Tendril|Walk
-  - first:
-      74: 4530477572179156651
-    second: Sphere|Attack.001
+      74: 2517152770028793317
+    second: Armature|WalkCycle
   externalObjects: {}
   materials:
     importMaterials: 1

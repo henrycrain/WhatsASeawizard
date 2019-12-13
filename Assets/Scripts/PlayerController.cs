@@ -1,21 +1,24 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject fireballPrefab;
     public float speed;
     public float jumpForce;
     public float gravityScale;
+    
+    private static readonly int Walking = Animator.StringToHash("Walking"); 
+    
     private CharacterController controller;
+    
     [SerializeField]
     private GameObject lightningParticles;
-
+    [SerializeField]
+    private GameObject fireballPrefab;
     [SerializeField]
     private Spell currentSpell = Spell.None;
-    private float currentVerticalSpeed = 0f;
+    
+    private float currentVerticalSpeed;
     private Damageable health;
     private Mana mana;
     private UIManager uiManager;
@@ -25,8 +28,9 @@ public class PlayerController : MonoBehaviour
     private bool canSwingSword = true;
     private bool canFireBall = true;
 
-    private RaycastHit hitInfo = new RaycastHit();
-    void Start()
+    private RaycastHit hitInfo;
+
+    private void Start()
     {
         health = GetComponent<Damageable>();
         controller = GetComponent<CharacterController>();
@@ -55,14 +59,7 @@ public class PlayerController : MonoBehaviour
     private void HandleMove()
     {
         var direction = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
-        if (direction == Vector3.zero)
-        {
-            animator.SetBool("Walking", true);
-        }
-        else
-        {
-            animator.SetBool("Walking", false);
-        }
+        animator.SetBool(Walking, direction != Vector3.zero);
         var velocity = direction * speed;
         velocity.y = currentVerticalSpeed;
 
@@ -94,11 +91,10 @@ public class PlayerController : MonoBehaviour
                 {
                     if (Physics.Raycast(new Ray(transform.position + transform.forward * 0.3f, transform.forward), out hitInfo))
                     {
-                        var health = hitInfo.transform.GetComponent<Damageable>();
-
-                        if (health != null)
+                        var targetHealth = hitInfo.transform.GetComponent<Damageable>();
+                        if (targetHealth != null)
                         {
-                            health.Damage(5);
+                            targetHealth.Damage(5);
                         }
                     }
 
@@ -114,7 +110,8 @@ public class PlayerController : MonoBehaviour
                 if (canFireBall && mana.UseMana(20))
                 {
                     // Instantiate a fireball at player's position
-                    Instantiate(fireballPrefab, transform.position + new Vector3(0.4f, 0, 0.4f), transform.rotation);
+                    var trans = transform;
+                    Instantiate(fireballPrefab, trans.position + new Vector3(0.4f, 0, 0.4f), trans.rotation);
                     StartCoroutine(FireballCooldown());
                 }
                 break;
@@ -123,18 +120,15 @@ public class PlayerController : MonoBehaviour
                 {
                     if (Physics.SphereCast(new Ray(transform.position + transform.forward * 0.3f, transform.forward), 2f, out hitInfo))
                     {
-                        var health = hitInfo.transform.GetComponent<Damageable>();
-
-                        if (health != null)
+                        var targetHealth = hitInfo.transform.GetComponent<Damageable>();
+                        if (targetHealth != null)
                         {
-                            health.Damage(10);
+                            targetHealth.Damage(10);
                         }
 
                     }
                     StartCoroutine(SwordCooldown());
                 }
-                break;
-            default:
                 break;
         }
     }

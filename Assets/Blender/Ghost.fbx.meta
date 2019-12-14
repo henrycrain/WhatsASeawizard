@@ -18,7 +18,12 @@ ModelImporter:
   - first:
       74: 2517152770028793317
     second: Armature|WalkCycle
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seawizard
+    second: {fileID: 2100000, guid: 55250360e1ddfed40bd57a0afb0bb3d8, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

@@ -3,7 +3,17 @@ guid: 4c319266b4239934c835fcc36c59f0e2
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brick
+    second: {fileID: 2100000, guid: d40b8be095effb42a9923df1971dc427, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Slate
+    second: {fileID: 2100000, guid: a67b8393b9e025d488cebb8e3a149e08, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

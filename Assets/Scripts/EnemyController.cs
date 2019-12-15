@@ -19,7 +19,7 @@ public class EnemyController : MonoBehaviour
 
     private Animator animator;
     private NavMeshAgent agent;
-    private Damageable damageable;
+    private Damageable playerHealth;
 
     private int nextIndex;
 
@@ -27,7 +27,7 @@ public class EnemyController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
-        damageable = player.GetComponent<Damageable>();
+        playerHealth = player.GetComponent<Damageable>();
         
         NextPoint();
     }
@@ -81,7 +81,7 @@ public class EnemyController : MonoBehaviour
 
     public void AttackEvent()
     {
-        damageable.Damage(attackDamage);
+        playerHealth.Damage(attackDamage);
     }
 
     public void Die()

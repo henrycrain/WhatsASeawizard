@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class FireballBehavior : MonoBehaviour
 {
-    private float speed = 5f;
+    private const float Speed = 5f;
+    
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        transform.position += transform.forward * speed * Time.deltaTime;
+        Transform trans = transform;
+        trans.position += trans.forward * (Speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -17,10 +19,14 @@ public class FireballBehavior : MonoBehaviour
         var otherObject = other.gameObject;
 
         var health = otherObject.GetComponent<Damageable>();
-
         if (health != null)
         {
             health.Damage(20);
+        }
+
+        if (other.GetComponent<Flammable>() != null)
+        {
+            Destroy(other.gameObject);
         }
 
         Destroy(gameObject);

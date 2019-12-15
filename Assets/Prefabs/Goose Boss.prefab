@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 6780159369024968853}
   - component: {fileID: 5525912045629536861}
   - component: {fileID: 8735559948421668765}
-  - component: {fileID: -6439945308771445552}
+  - component: {fileID: 2612446582986835272}
   m_Layer: 0
   m_Name: Goose Boss
   m_TagString: Untagged
@@ -117,7 +117,7 @@ CapsuleCollider:
   m_Height: 2.3139076
   m_Direction: 2
   m_Center: {x: 0, y: 0.67766595, z: -0.018964767}
---- !u!195 &-6439945308771445552
+--- !u!195 &2612446582986835272
 NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,7 +135,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.8
+  m_Height: 1.75
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4

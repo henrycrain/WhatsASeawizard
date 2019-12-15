@@ -75,16 +75,17 @@ public class CameraController : MonoBehaviour {
         float targetXAngle = pivot.eulerAngles.x;
 
         var rotation = Quaternion.Euler(targetXAngle, targetYAngle, 0.0f);
-        transform.position = target.position - (rotation * offset);
+        Transform trans = transform;
+        trans.position = target.position - (rotation * offset);
+        Vector3 position = trans.position;
 
-        if (transform.position.y < target.position.y)
+        if (position.y < target.position.y)
         {
-            transform.position = new Vector3(transform.position.x,
-                                                target.position.y,
-                                                transform.position.z);
+            trans.position = new Vector3(position.x,
+                                         target.position.y,
+                                         position.z);
         }
 
-        transform.LookAt(target);
-        
+        trans.LookAt(target);
     }
 }

@@ -7,8 +7,9 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     public float gravityScale;
     
-    private static readonly int Walking = Animator.StringToHash("Walking"); 
-    
+    private static readonly int Walking = Animator.StringToHash("Walking");
+    private static readonly int Attacking = Animator.StringToHash("Attacking");
+
     private CharacterController controller;
     
     [SerializeField]
@@ -22,7 +23,6 @@ public class PlayerController : MonoBehaviour
     private Damageable health;
     private Mana mana;
     private UIManager uiManager;
-    private ParticleSystem lightningSystem;
     private Animator animator;
 
     private bool canSwingSword = true;
@@ -127,6 +127,7 @@ public class PlayerController : MonoBehaviour
                         }
 
                     }
+                    animator.SetBool(Attacking, true);
                     StartCoroutine(SwordCooldown());
                 }
                 break;

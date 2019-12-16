@@ -127,8 +127,8 @@ public class PlayerController : MonoBehaviour
                         }
 
                     }
-                    animator.SetBool(Attacking, true);
-                    StartCoroutine(SwordCooldown());
+                    animator.SetTrigger(Attacking);
+                    canSwingSword = false;
                 }
                 break;
         }
@@ -139,11 +139,8 @@ public class PlayerController : MonoBehaviour
         Destroy(gameObject);
     }
 
-    IEnumerator SwordCooldown()
+    public void HandleAttackEnd()
     {
-        canSwingSword = false;
-        // Should probably use animation events here, sword gets out of sync quickly
-        yield return new WaitForSeconds(0.5f);
         canSwingSword = true;
     }
 

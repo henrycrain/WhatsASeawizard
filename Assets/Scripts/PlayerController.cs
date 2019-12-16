@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     
     private static readonly int Walking = Animator.StringToHash("Walking");
     private static readonly int Attacking = Animator.StringToHash("Attacking");
+    private static readonly int Dying = Animator.StringToHash("Die");
 
     private CharacterController controller;
     
@@ -136,6 +137,7 @@ public class PlayerController : MonoBehaviour
 
     public void Die()
     {
+        animator.SetTrigger(Dying);
         Destroy(gameObject);
     }
 

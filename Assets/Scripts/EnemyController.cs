@@ -20,6 +20,7 @@ public class EnemyController : MonoBehaviour
     private Animator animator;
     private NavMeshAgent agent;
     private Damageable playerHealth;
+    
 
     private int nextIndex;
 

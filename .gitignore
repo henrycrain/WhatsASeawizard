@@ -15,11 +15,12 @@ UnityGenerated/
 
 # Never ignore asset metadata
 !/[Aa]ssets/**/*.meta
+# ...except for folders we're ignoring
+[Aa]ssets/Store.meta
 
-# ================ #
-# From Asset Store #
-# ================ #
-[Aa]ssets/Store/
+# This is a folder I use to hold assets I downloaded that aren't used
+# in the project, so that they don't clutter the repository
+[Aa]ssets/Store
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #

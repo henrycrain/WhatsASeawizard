@@ -162,7 +162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   pursuitDistance: 5
-  attackRange: 1.5
+  attackRange: 1
   attackDamage: 10
   patrol: []
 --- !u!135 &3030343037805024945
@@ -174,7 +174,7 @@ SphereCollider:
   m_GameObject: {fileID: 724085082350836593}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.38
   m_Center: {x: 0, y: 0.3, z: 0}

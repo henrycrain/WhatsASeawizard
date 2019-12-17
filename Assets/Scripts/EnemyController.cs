@@ -38,7 +38,8 @@ public class EnemyController : MonoBehaviour
         if (!agent.enabled) 
             return;
 
-        float dist = Vector3.Distance(player.transform.position, transform.position);
+        Vector3 position = transform.position;
+        float dist = Vector3.Distance(player.transform.position, position);
         bool attack = false;
         bool pursue = dist < pursuitDistance;
 
@@ -47,7 +48,14 @@ public class EnemyController : MonoBehaviour
             if (dist < attackRange)
             {
                 attack = true;
-                agent.SetDestination(transform.position);
+                agent.SetDestination(position);
+                
+                // Make enemy face player
+                Vector3 lookPos = player.transform.position - position;
+                lookPos.y = 0;
+                Quaternion rotation = Quaternion.LookRotation(lookPos);
+                transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 1);
+                
                 animator.SetTrigger(Attack);
             }
             else

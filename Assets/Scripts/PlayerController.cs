@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
         currentSpell = spell;
     }
 
-    public void CastSpell()
+    private void CastSpell()
     {
         switch (currentSpell)
         {
@@ -111,17 +111,17 @@ public class PlayerController : MonoBehaviour
                 if (canFireBall && mana.UseMana(20))
                 {
                     // Instantiate a fireball at player's position
-                    var trans = transform;
-                    Instantiate(fireballPrefab, trans.position + new Vector3(0.4f, 0, 0.4f), trans.rotation);
+                    Transform trans = transform;
+                    Instantiate(fireballPrefab, trans.position + new Vector3(0.3f, 0.0f, 0.3f), trans.rotation);
                     StartCoroutine(FireballCooldown());
                 }
                 break;
             case Spell.Sword:
                 if (canSwingSword)
                 {
-                    if (Physics.SphereCast(new Ray(transform.position + transform.forward * 0.3f, transform.forward), 2f, out hitInfo))
+                    if (Physics.SphereCast(new Ray(transform.position + transform.forward * 0.0f, transform.forward), 0.5f, out hitInfo))
                     {
-                        var targetHealth = hitInfo.transform.GetComponent<Damageable>();
+                        var targetHealth = hitInfo.transform.gameObject.GetComponent<Damageable>();
                         if (targetHealth != null)
                         {
                             targetHealth.Damage(10);

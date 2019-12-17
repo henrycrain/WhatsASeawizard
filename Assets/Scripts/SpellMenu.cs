@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SpellMenu : MonoBehaviour
 {
     private bool spellMenuVisible = false;
-    private Spell currentSpell = Spell.None;
+    
     // Start is called before the first frame update
     void Start()
     {

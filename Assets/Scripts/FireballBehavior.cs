@@ -28,7 +28,7 @@ public class FireballBehavior : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
-
+        
         Destroy(gameObject);
     }
 }

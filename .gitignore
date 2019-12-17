@@ -15,8 +15,9 @@ UnityGenerated/
 
 # Never ignore asset metadata
 !/[Aa]ssets/**/*.meta
-# ...except for folders we're ignoring
+# ...except for things we're ignoring
 [Aa]ssets/Store.meta
+[Aa]ssets/**/*.blend1.meta
 
 # This is a folder I use to hold assets I downloaded that aren't used
 # in the project, so that they don't clutter the repository

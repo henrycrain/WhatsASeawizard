@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
     private UIManager uiManager;
     private Animator animator;
 
+    private bool dead = false;
     private bool canSwingSword = true;
     private bool canFireBall = true;
 
@@ -50,6 +51,9 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (dead)
+            return;
+        
         HandleMove();
 
         if (Cursor.lockState == CursorLockMode.Locked && Input.GetMouseButton(0))
@@ -71,7 +75,6 @@ public class PlayerController : MonoBehaviour
         animator.SetBool(Walking, direction != Vector3.zero);
         var velocity = direction * speed;
         velocity.y = currentVerticalSpeed;
-
         
         if (controller.isGrounded && Input.GetButtonDown("Jump")) 
         {
@@ -147,7 +150,11 @@ public class PlayerController : MonoBehaviour
     // ReSharper disable once UnusedMember.Global
     public void Die()
     {
-        animator.SetTrigger(Dying);
+        if (!dead)
+        {
+            dead = true;
+            animator.SetTrigger(Dying);
+        }
     }
 
     // ReSharper disable once UnusedMember.Global

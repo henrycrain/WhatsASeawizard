@@ -1,5 +1,7 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -31,6 +33,8 @@ public class PlayerController : MonoBehaviour
 
     private RaycastHit hitInfo;
 
+    public HashSet<Spell> Spells { get; set; }
+
     private void Start()
     {
         health = GetComponent<Damageable>();
@@ -38,6 +42,10 @@ public class PlayerController : MonoBehaviour
         mana = GetComponent<Mana>();
         uiManager = GameObject.Find("HUD").GetComponent<UIManager>();
         animator = GetComponent<Animator>();
+        Spells = new HashSet<Spell>
+        {
+            Spell.Sword
+        };
     }
 
     void Update()
@@ -144,6 +152,12 @@ public class PlayerController : MonoBehaviour
     public void HandleAttackEnd()
     {
         canSwingSword = true;
+    }
+
+    private void DeathEndEvent()
+    {
+        // End the game in a better way (return to title screen?)
+        SceneManager.LoadScene("MainMenuScene");
     }
 
     IEnumerator FireballCooldown()

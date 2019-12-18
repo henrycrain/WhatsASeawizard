@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class SpellMenu : MonoBehaviour
 {
     private bool spellMenuVisible = false;
+    private PlayerController player;
     
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("Seawizard").GetComponent<PlayerController>();
         foreach (Transform child in transform)
         {
             child.gameObject.SetActive(false);
@@ -26,7 +28,7 @@ public class SpellMenu : MonoBehaviour
     {
         if (!spellMenuVisible && Input.GetButtonDown("SummonSpellMenu"))
         {
-            ShowMenu();
+            ShowMenu(player.Spells);
         }
         else if (spellMenuVisible && Input.GetButtonDown("SummonSpellMenu"))
         {
@@ -34,12 +36,16 @@ public class SpellMenu : MonoBehaviour
         }
     }
 
-    public void ShowMenu()
+    public void ShowMenu(HashSet<Spell> spellsToShow)
     {
         Cursor.lockState = CursorLockMode.None;
         foreach (Transform child in transform)
         {
-            child.gameObject.SetActive(true);
+            var menuButton = child.gameObject.GetComponent<RadialMenuButton>();
+            if (spellsToShow.Contains(menuButton.containedSpell))
+            {
+                child.gameObject.SetActive(true);
+            }
         }
         spellMenuVisible = true;
     }

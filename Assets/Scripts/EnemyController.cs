@@ -91,11 +91,13 @@ public class EnemyController : MonoBehaviour
         nextIndex %= patrol.Length;
     }
 
+    // ReSharper disable once UnusedMember.Global
     public void AttackEvent()
     {
         playerHealth.Damage(attackDamage);
     }
 
+    // ReSharper disable once UnusedMember.Global
     public void Die()
     {
         if (rewardSpell != Spell.None)
@@ -104,9 +106,10 @@ public class EnemyController : MonoBehaviour
         }
         agent.enabled = false;
         animator.SetTrigger(Death);
-        //Destroy(gameObject);  // TODO
+        playerHealth.Heal(10);
     }
 
+    // ReSharper disable once UnusedMember.Local
     private void DeathEndEvent()
     {
         Destroy(gameObject);

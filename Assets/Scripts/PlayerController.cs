@@ -133,6 +133,7 @@ public class PlayerController : MonoBehaviour
                         if (targetHealth != null)
                         {
                             targetHealth.Damage(10);
+                            mana.RestoreMana(5);
                         }
 
                     }
@@ -143,24 +144,26 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // ReSharper disable once UnusedMember.Global
     public void Die()
     {
         animator.SetTrigger(Dying);
-        // Destroy(gameObject);
     }
 
+    // ReSharper disable once UnusedMember.Global
     public void HandleAttackEnd()
     {
         canSwingSword = true;
     }
 
+    // ReSharper disable once UnusedMember.Local
     private void DeathEndEvent()
     {
         // End the game in a better way (return to title screen?)
         SceneManager.LoadScene("MainMenuScene");
     }
 
-    IEnumerator FireballCooldown()
+    private IEnumerator FireballCooldown()
     {
         canFireBall = false;
         yield return new WaitForSeconds(0.2f);

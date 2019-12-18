@@ -4,9 +4,6 @@ ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
   - first:
-      74: 7166795868199246467
-    second: Sphere|Death
-  - first:
       74: -3777153505740021476
     second: Sphere|Death.001
   - first:
@@ -19,29 +16,36 @@ ModelImporter:
       74: -4901126675295228450
     second: Sphere|Walk
   - first:
-      74: -5122989720332935947
-    second: Tendril|Death
+      74: 885944232402757753
+    second: Armature|Action
   - first:
-      74: 6067220841381891106
-    second: Tendril|Death.001
+      74: 3680201527246846624
+    second: Armature|Attack.001
   - first:
-      74: -1053563160156831200
-    second: Tendril|Stand
+      74: -982115091633673366
+    second: Armature|Death
   - first:
-      74: 8402876907006303417
-    second: Tendril|Attack
+      74: -2142118036446059745
+    second: Armature|Death.001
   - first:
-      74: 1417447701474803707
-    second: Tendril|Walk
+      74: -4032558703003846388
+    second: Armature|Stand
   - first:
-      74: 4530477572179156651
-    second: Sphere|Attack.001
-  externalObjects:
+      74: 8490311711194994279
+    second: Armature|Stand.001
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Ooze
-    second: {fileID: 2100000, guid: 4a4ee255db9374e4d885651174cd6b52, type: 2}
+      74: 1335161629819306308
+    second: Armature|Stand.002
+  - first:
+      74: 8349542763059015795
+    second: Armature|Walk
+  - first:
+      74: -6544428077046268240
+    second: Armature|Walk.001
+  - first:
+      74: 4723146814002874508
+    second: Armature|Attack
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -70,11 +74,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Sphere|Attack.001
-      takeName: Sphere|Attack.001
+      name: Armature|Action
+      takeName: Armature|Action
       internalID: 0
       firstFrame: 0
-      lastFrame: 40
+      lastFrame: 1
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -99,11 +103,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Sphere|Death
-      takeName: Sphere|Death
+      name: Armature|Attack.001
+      takeName: Armature|Attack.001
       internalID: 0
       firstFrame: 0
-      lastFrame: 9
+      lastFrame: 1
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -123,8 +127,8 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.9970501
-        functionName: DeathEndEvent
+      - time: 0
+        functionName: AttackEvent
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
@@ -135,8 +139,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Sphere|Death.001
-      takeName: Sphere|Death.001
+      name: Armature|Death
+      takeName: Armature|Death
       internalID: 0
       firstFrame: 0
       lastFrame: 10
@@ -164,11 +168,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Sphere|Stand
-      takeName: Sphere|Stand
+      name: Armature|Death.001
+      takeName: Armature|Death.001
       internalID: 0
       firstFrame: 0
-      lastFrame: 39
+      lastFrame: 1
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -193,8 +197,124 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Sphere|Attack
-      takeName: Sphere|Attack
+      name: Armature|Stand
+      takeName: Armature|Stand
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Stand.001
+      takeName: Armature|Stand.001
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Stand.002
+      takeName: Armature|Stand.002
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Walk
+      takeName: Armature|Walk
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Walk.001
+      takeName: Armature|Walk.001
       internalID: 0
       firstFrame: 0
       lastFrame: 20
@@ -222,11 +342,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Sphere|Walk
-      takeName: Sphere|Walk
+      name: Armature|Attack
+      takeName: Armature|Attack
       internalID: 0
       firstFrame: 0
-      lastFrame: 40
+      lastFrame: 20
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

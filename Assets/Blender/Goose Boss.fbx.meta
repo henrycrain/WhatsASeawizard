@@ -18,27 +18,7 @@ ModelImporter:
   - first:
       74: 8349542763059015795
     second: Armature|Walk
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Bottom
-    second: {fileID: 2100000, guid: f8d05038832798246ace914f64940f0e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Eyes
-    second: {fileID: 2100000, guid: 762717a565309054b9c6a58e7e8d7f9c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Head
-    second: {fileID: 2100000, guid: ef357def85be80e40bc375e62341b44d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Top
-    second: {fileID: 2100000, guid: 9dd23b1ca63160049a0edf4b09642cf9, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -90,9 +70,6 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-<<<<<<< HEAD
-      events: []
-=======
       events:
       - time: 0
         functionName: AttackEvent
@@ -101,7 +78,6 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
->>>>>>> 96794a5a6496f563b92618dc727256d175402b9d
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -130,18 +106,7 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-<<<<<<< HEAD
-      events:
-      - time: 0.9970501
-        functionName: DeathEndEvent
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-=======
       events: []
->>>>>>> 96794a5a6496f563b92618dc727256d175402b9d
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}

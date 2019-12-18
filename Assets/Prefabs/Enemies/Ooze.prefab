@@ -72,10 +72,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8964693797273149148}
   - component: {fileID: 1360929602553885606}
-  - component: {fileID: -2291109313780424204}
   - component: {fileID: -8267782252138661181}
-  - component: {fileID: 3342204252562275272}
   - component: {fileID: 4277365565390734904}
+  - component: {fileID: -2291109313780424204}
+  - component: {fileID: 3342204252562275272}
   m_Layer: 0
   m_Name: Ooze
   m_TagString: Untagged
@@ -118,24 +118,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-2291109313780424204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5346797889426025679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee70f1712b5c63b4b91b62135b8f454e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  pursuitDistance: 5
-  attackRange: 1.2
-  attackDamage: 15
-  patrol: []
-  rewardSpell: 0
 --- !u!195 &-8267782252138661181
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -158,19 +140,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &3342204252562275272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5346797889426025679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c39b646936b1664d8263030cc7dadf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 20
 --- !u!65 &4277365565390734904
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -184,6 +153,37 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 0.7, z: 1.5}
   m_Center: {x: 0, y: 0.35, z: 0}
+--- !u!114 &-2291109313780424204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5346797889426025679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee70f1712b5c63b4b91b62135b8f454e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  pursuitDistance: 5
+  attackRange: 1.2
+  attackDamage: 15
+  patrol: []
+  rewardSpell: 0
+--- !u!114 &3342204252562275272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5346797889426025679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c39b646936b1664d8263030cc7dadf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 20
 --- !u!1 &6315349624578103898
 GameObject:
   m_ObjectHideFlags: 0

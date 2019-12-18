@@ -41,9 +41,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3503225209313408495}
   - component: {fileID: 6780159369024968853}
-  - component: {fileID: 5525912045629536861}
-  - component: {fileID: 8735559948421668765}
   - component: {fileID: 2612446582986835272}
+  - component: {fileID: 8735559948421668765}
+  - component: {fileID: 5525912045629536861}
   - component: {fileID: -8514899595832355057}
   m_Layer: 0
   m_Name: Goose Boss
@@ -87,38 +87,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5525912045629536861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 488267948453480444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee70f1712b5c63b4b91b62135b8f454e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  pursuitDistance: 10
-  attackRange: 1.5
-  attackDamage: 20
-  patrol: []
-  rewardSpell: 1
---- !u!136 &8735559948421668765
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 488267948453480444}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5523341
-  m_Height: 2.3139076
-  m_Direction: 2
-  m_Center: {x: 0, y: 0.67766595, z: -0.018964767}
 --- !u!195 &2612446582986835272
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -141,6 +109,38 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!136 &8735559948421668765
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488267948453480444}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5523341
+  m_Height: 2.3139076
+  m_Direction: 2
+  m_Center: {x: 0, y: 0.67766595, z: -0.018964767}
+--- !u!114 &5525912045629536861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488267948453480444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee70f1712b5c63b4b91b62135b8f454e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  pursuitDistance: 10
+  attackRange: 1.5
+  attackDamage: 20
+  patrol: []
+  rewardSpell: 1
 --- !u!114 &-8514899595832355057
 MonoBehaviour:
   m_ObjectHideFlags: 0

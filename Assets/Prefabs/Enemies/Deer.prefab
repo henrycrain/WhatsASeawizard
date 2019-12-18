@@ -1084,7 +1084,7 @@ Animator:
   m_GameObject: {fileID: 9221062561132668418}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 4f9b79f6c3cdca9438e53442339df05d, type: 3}
-  m_Controller: {fileID: 9100000, guid: 95423d54b57d0dc45960633b3d0b9239, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1139,3 +1139,4 @@ MonoBehaviour:
   attackRange: 1.5
   attackDamage: 10
   patrol: []
+  rewardSpell: 0

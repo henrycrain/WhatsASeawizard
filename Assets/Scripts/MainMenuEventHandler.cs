@@ -8,6 +8,7 @@ public class MainMenuEventHandler : MonoBehaviour
     
     public void PlayGame()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         SceneManager.LoadScene("MainScene");
     }
 

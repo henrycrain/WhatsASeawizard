@@ -167,6 +167,7 @@ public class PlayerController : MonoBehaviour
     private void DeathEndEvent()
     {
         // End the game in a better way (return to title screen?)
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("MainMenuScene");
     }
 

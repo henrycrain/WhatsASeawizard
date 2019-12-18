@@ -132,10 +132,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1243939411626040429}
   - component: {fileID: 9207995969344418071}
-  - component: {fileID: 9022418652510847624}
-  - component: {fileID: -1548779202627627595}
   - component: {fileID: 7453263247672107767}
   - component: {fileID: 8365659975997564576}
+  - component: {fileID: 9022418652510847624}
+  - component: {fileID: -1548779202627627595}
   m_Layer: 0
   m_Name: Roth Monster
   m_TagString: Untagged
@@ -178,37 +178,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &9022418652510847624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2817007704688750206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee70f1712b5c63b4b91b62135b8f454e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  pursuitDistance: 5
-  attackRange: 1.3
-  attackDamage: 30
-  patrol: []
-  rewardSpell: 2
---- !u!114 &-1548779202627627595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2817007704688750206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c39b646936b1664d8263030cc7dadf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 70
 --- !u!195 &7453263247672107767
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -245,6 +214,37 @@ CapsuleCollider:
   m_Height: 2.7
   m_Direction: 1
   m_Center: {x: 0, y: 1.2, z: 0}
+--- !u!114 &9022418652510847624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2817007704688750206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee70f1712b5c63b4b91b62135b8f454e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  pursuitDistance: 5
+  attackRange: 1.3
+  attackDamage: 30
+  patrol: []
+  rewardSpell: 2
+--- !u!114 &-1548779202627627595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2817007704688750206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c39b646936b1664d8263030cc7dadf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 70
 --- !u!1 &2838114019512919407
 GameObject:
   m_ObjectHideFlags: 0

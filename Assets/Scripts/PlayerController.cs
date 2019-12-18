@@ -127,7 +127,7 @@ public class PlayerController : MonoBehaviour
             case Spell.Sword:
                 if (canSwingSword)
                 {
-                    if (Physics.SphereCast(new Ray(transform.position + transform.forward * 0.0f, transform.forward), 0.5f, out hitInfo))
+                    if (Physics.SphereCast(new Ray(transform.position, transform.forward), 0.3f, out hitInfo))
                     {
                         var targetHealth = hitInfo.transform.gameObject.GetComponent<Damageable>();
                         if (targetHealth != null)

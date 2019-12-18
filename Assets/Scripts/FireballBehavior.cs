@@ -15,7 +15,6 @@ public class FireballBehavior : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Fireball collision");
         var otherObject = other.gameObject;
 
         var health = otherObject.GetComponent<Damageable>();

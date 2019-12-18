@@ -9,8 +9,8 @@ public class RadialMenuButton : MonoBehaviour
     private GameObject player;
     [SerializeField]
     private GameObject parentMenu;
-    [SerializeField]
-    private Spell containedSpell;
+    
+    public Spell containedSpell;
 
     private Button button;
     private PlayerController controller;

@@ -20,6 +20,9 @@ public class EnemyController : MonoBehaviour
     private Animator animator;
     private NavMeshAgent agent;
     private Damageable playerHealth;
+    private PlayerController playerController;
+
+    public Spell rewardSpell;
     
 
     private int nextIndex;
@@ -29,7 +32,7 @@ public class EnemyController : MonoBehaviour
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         playerHealth = player.GetComponent<Damageable>();
-        
+        playerController = player.GetComponent<PlayerController>();
         NextPoint();
     }
 
@@ -95,8 +98,17 @@ public class EnemyController : MonoBehaviour
 
     public void Die()
     {
+        if (rewardSpell != Spell.None)
+        {
+            playerController.Spells.Add(rewardSpell);
+        }
         agent.enabled = false;
         animator.SetTrigger(Death);
-        Destroy(gameObject);  // TODO
+        //Destroy(gameObject);  // TODO
+    }
+
+    private void DeathEndEvent()
+    {
+        Destroy(gameObject);
     }
 }
